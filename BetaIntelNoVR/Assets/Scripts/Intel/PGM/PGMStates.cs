@@ -5,6 +5,8 @@ using UnityEngine;
 public class PGMStates : MonoBehaviour
 {
 
+    public SerialHandlerPGM serialHandlerPGM;
+    
     int currentState = 5;
     int previousState = 5;
 
@@ -22,11 +24,13 @@ public class PGMStates : MonoBehaviour
         {
             if (Intel.sharedInstance.resistanceMode == false)
             {
-                serialPGMString = "1";
+                serialHandlerPGM.Write("1");
+                // serialPGMString = "1";
             }
             else
             {
-                serialPGMString = "0";
+                serialHandlerPGM.Write("0");
+                //serialPGMString = "0";
             }
         }
 
@@ -35,11 +39,13 @@ public class PGMStates : MonoBehaviour
         {
             if (Intel.sharedInstance.resistanceMode == false)
             {
-                serialPGMString = "0";
+                //serialPGMString = "0";
+                serialHandlerPGM.Write("0");
             }
             else
             {
-                serialPGMString = "1";
+                serialHandlerPGM.Write("1");
+                //serialPGMString = "1";
             }
 
         }

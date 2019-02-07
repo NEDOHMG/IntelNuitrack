@@ -105,15 +105,15 @@ public class SerialHandlerPGM : MonoBehaviour
     void OpenPort()
     {
         // This will just print the devices connected in the port 
-        foreach (string str in SerialPort.GetPortNames())
-        {
-            Debug.Log(string.Format("port : {0}", str));
-        }
+        //foreach (string str in SerialPort.GetPortNames())
+        //{
+        //    Debug.Log(string.Format("port : {0}", str));
+        //}
 
         myDataPGM = new SerialPort(ChoosePort(portNamePGM), ChooseBaudRate(baudRatePGM), Parity.None, 8, StopBits.One);
 
         myDataPGM.Open();
-
+        myDataPGM.ReadTimeout = 500; // Probando 
     }
 
     void OnDestroy()
