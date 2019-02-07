@@ -35,7 +35,7 @@ public class SerialHandlerBio : MonoBehaviour
     private string _portName;
 
     // Baud rate
-    public BaudRateValue baudRate = BaudRateValue._115200; // probando 
+    public BaudRateValue baudRate = BaudRateValue._115200; 
     private int _baudRate;
 
     // Create a thread
@@ -134,10 +134,10 @@ public class SerialHandlerBio : MonoBehaviour
     void OpenPort()
     {
         // This will just print the devices connected in the port 
-        foreach (string str in SerialPort.GetPortNames())
-        {
-            Debug.Log(string.Format("port : {0}", str));
-        }
+        //foreach (string str in SerialPort.GetPortNames())
+        //{
+        //    Debug.Log(string.Format("port : {0}", str));
+        //}
 
         myData = new SerialPort(ChoosePort(portName), ChooseBaudRate(baudRate), Parity.None, 8, StopBits.One);
 
