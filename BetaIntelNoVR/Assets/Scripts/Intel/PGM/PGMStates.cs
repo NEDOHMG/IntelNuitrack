@@ -10,9 +10,6 @@ public class PGMStates : MonoBehaviour
     int currentState = 5;
     int previousState = 5;
 
-    [HideInInspector]
-    public string serialPGMString;
-
     // Update is called once per frame
     void Update()
     {
@@ -25,12 +22,12 @@ public class PGMStates : MonoBehaviour
             if (Intel.sharedInstance.resistanceMode == false)
             {
                 serialHandlerPGM.Write("1");
-                // serialPGMString = "1";
+                Debug.Log("The PGM is actuated");
             }
             else
             {
                 serialHandlerPGM.Write("0");
-                //serialPGMString = "0";
+                Debug.Log("The PGM is not actuated");
             }
         }
 
@@ -39,13 +36,13 @@ public class PGMStates : MonoBehaviour
         {
             if (Intel.sharedInstance.resistanceMode == false)
             {
-                //serialPGMString = "0";
                 serialHandlerPGM.Write("0");
+                Debug.Log("The PGM is not actuated");
             }
             else
             {
                 serialHandlerPGM.Write("1");
-                //serialPGMString = "1";
+                Debug.Log("The PGM is not actuated");
             }
 
         }
