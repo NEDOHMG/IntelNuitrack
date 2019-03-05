@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 398}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 398}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 348}
   m_MaxSize: {x: 12008, y: 8048}
   vertical: 0
-  controlID: 420
+  controlID: 319
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 348}
   m_MaxSize: {x: 8006, y: 8048}
   vertical: 1
-  controlID: 485
+  controlID: 320
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 486
+  controlID: 321
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,8 +210,8 @@ MonoBehaviour:
     y: 0
     width: 954
     height: 511
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 14}
@@ -298,7 +298,7 @@ MonoBehaviour:
     width: 950
     height: 491
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_MaximizeOnPlay: 1
+  m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
   m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -383,7 +383,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: b669faff
+      m_ExpandedIDs: ccfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.06475143, y: 0.021866009, z: -0.0014191449, w: -0.9976609}
     speed: 2
-    m_Value: {x: -0.06475143, y: 0.021866009, z: -0.001419145, w: -0.9976609}
+    m_Value: {x: -0.06475143, y: 0.021866009, z: -0.0014191449, w: -0.9976609}
   m_Size:
     m_Target: 5.1013484
     speed: 2
@@ -623,20 +623,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Animations
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Animations
+  - Assets/Bio
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\avega\Documents\Developer\Unity\BetaIntelNoVR
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 901e0400
-    m_LastClickedID: 269968
-    m_ExpandedIDs: 000000005c1d04007a1d0400c41d0400981e0400ea1e0400a81f04006e28040070280400722804007428040076280400782804007a2804007c2804007e280400
+    m_SelectedIDs: c4260000
+    m_LastClickedID: 9924
+    m_ExpandedIDs: 00000000c42600009a27000070290000e62f0000a83100009e370000564a0000584a00005a4a00005c4a00005e4a0000604a0000624a0000644a0000664a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -664,7 +664,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: a4250000
     m_LastClickedID: 9636
-    m_ExpandedIDs: 000000005c1d04007a1d0400c41d0400981e0400ea1e0400a81f04006e28040070280400722804007428040076280400782804007a2804007c2804007e280400
+    m_ExpandedIDs: 00000000c42600009a27000070290000e62f0000a83100009e370000564a0000584a00005a4a00005c4a00005e4a0000604a0000624a0000644a0000664a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

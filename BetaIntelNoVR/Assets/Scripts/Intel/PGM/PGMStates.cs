@@ -6,7 +6,7 @@ public class PGMStates : MonoBehaviour
 {
 
     public SerialHandlerPGM serialHandlerPGM;
-    
+
     int currentState = 5;
     int previousState = 5;
 
@@ -16,36 +16,44 @@ public class PGMStates : MonoBehaviour
 
         currentState = Intel.sharedInstance.ExerciseState;
 
-
-        if (currentState == 0 && currentState != previousState)
+        if (currentState == 1 && currentState != previousState)
         {
-            if (Intel.sharedInstance.resistanceMode == false)
-            {
-                serialHandlerPGM.Write("1");
-                Debug.Log("The PGM is actuated");
-            }
-            else
-            {
-                serialHandlerPGM.Write("0");
-                Debug.Log("The PGM is not actuated");
-            }
+            serialHandlerPGM.Write("1");
+            Debug.Log("The PGM is actuated");
+        }
+        else if (currentState == 0 && currentState != previousState)
+        {
+            serialHandlerPGM.Write("0");
+            Debug.Log("The PGM is not actuated");
         }
 
+        //if (currentState == 1 && currentState != previousState)
+        //{
+        //    if (Intel.sharedInstance.resistanceMode == false)
+        //    {
+        //        serialHandlerPGM.Write("1");
+        //        Debug.Log("The PGM is actuated");
+        //    }
+        //    else
+        //    {
+        //        serialHandlerPGM.Write("0");
+        //        Debug.Log("The PGM is not actuated");
+        //    }
+        //}
 
-        if (currentState == 2 && currentState != previousState)
-        {
-            if (Intel.sharedInstance.resistanceMode == false)
-            {
-                serialHandlerPGM.Write("0");
-                Debug.Log("The PGM is not actuated");
-            }
-            else
-            {
-                serialHandlerPGM.Write("1");
-                Debug.Log("The PGM is not actuated");
-            }
-
-        }
+        //if (currentState == 2 && currentState != previousState)
+        //{
+        //    if (Intel.sharedInstance.resistanceMode == false)
+        //    {
+        //        serialHandlerPGM.Write("0");
+        //        Debug.Log("The PGM is not actuated");
+        //    }
+        //    else
+        //    {
+        //        serialHandlerPGM.Write("1");
+        //        Debug.Log("The PGM is not actuated");
+        //    }
+        //}
 
         previousState = currentState;
 

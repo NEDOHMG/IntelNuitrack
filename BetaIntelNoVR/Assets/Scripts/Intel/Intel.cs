@@ -122,9 +122,9 @@ public class Intel : MonoBehaviour {
     public double SpineBaseAverageDelta = 0.0;
 
     //Variables for output to log file
-    public static string preamble = "";
-    public static string filename = "";
-    public static string logfile = "";
+    //public static string preamble = "";
+    //public static string filename = "";
+    //public static string logfile = "";
 
     private static Texture2D _staticRectTexture;
     private static GUIStyle _staticRectStyle;
@@ -208,10 +208,10 @@ public class Intel : MonoBehaviour {
         _calspineList = new List<double>();
 
         //initialize log file name based on current date and time
-        DateTime dt = DateTime.Now;
-        preamble = "Assets/Resources/";
-        filename = "log_" + dt.ToString("yyyy-MM-dd_HH-mm-ss");
-        logfile = preamble + filename + ".txt";
+        //DateTime dt = DateTime.Now;
+        //preamble = "Assets/Resources/";
+        //filename = "log_" + dt.ToString("yyyy-MM-dd_HH-mm-ss");
+        //logfile = preamble + filename + ".txt";
 
         threshold = 0.0;
         noisefilter = 0.002;
@@ -219,7 +219,7 @@ public class Intel : MonoBehaviour {
 
     }
 
-    //write an entry to the log file
+    // write an entry to the log file
     //static void WriteLog(string entry)
     //{
     //    if (!File.Exists(logfile))
@@ -468,7 +468,7 @@ public class Intel : MonoBehaviour {
             StatusLightColor = Color.yellow;
             colorActuator = 1010;
         }
-        //if subject stops moving up, change state to 4
+        //if subject stops moving up, change state to 0
         else if (Stopped && ExerciseState == 3)
         {
             ExerciseState = 0;
